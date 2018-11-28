@@ -31,7 +31,17 @@ Number.randomish();
 
 ```
 
-```
+```js
+require('sugar/polyfills/es6');
+require('sugar/locales/ja');
+require('sugar/locales');
+
+var Sugar = require('sugar');
+Sugar.Number.round(3.1415);
+var Sugar = require('sugar/number');
+Sugar.Number.round(3.1415);
+var round = require('sugar/number/round');
+round(3.1415);
 ```
 
 ```
